@@ -1,7 +1,7 @@
 {
     "mail": {
-        "uid": "leehao.chin@theeverlygroup.com",
-        "pwd": "iwfg pgxy tmkl zjzy",
+        "uid": "your email",
+        "pwd": "your app password",
         "host": "smtp.gmail.com",
         "service": "gmail",
         "port": 587
