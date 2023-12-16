@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/client-order/order/shortcut-icons/menu.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/client-order/order/css/share-css.css" />
+    <link rel="stylesheet" href="/client-order/order/css/order-settings.css" />
+    <link rel="stylesheet" href="/client-order/order/css/material-icon.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Sale Menu</title>
+  </head>
+  <body>
+    <!-- Template Start -->
+    <div class="container">
+      <div class="setup-prod-food-menu-div">
+        <div class="r1 flex-row space-between">
+          <div class="flex-row r btn-back0">
+            <div class="btn-back">
+              <span class="material-icons"> arrow_back_ios </span>
+            </div>
+            <div class="title">Sale Menu</div>
+            <div class="loading"></div>
+          </div>
+
+          <div class="flex-row action">
+            <div class="btn-add btn-bg1"></div>
+            <div class="btn-save btn-bg2">
+              <span class="material-icons"> save </span>
+            </div>
+            <div class="btn-delete btn-bg3"></div>
+          </div>
+        </div>
+
+        <div class="flex-row">
+          <div class="col1">
+            <div>
+              <div class="flex-row search-bar0">
+                <div class="input-field">
+                  <input
+                    type="text"
+                    class="txt-input search-description"
+                    placeholder="Search..."
+                  />
+                </div>
+                <div class="btn-search">
+                  <span class="material-icons icon"> search </span>
+                </div>
+              </div>
+              <div class="flex-row space-between search-bar-detail">
+                <div class="flex-row search-bar-item1">
+                  <div># of records:</div>
+                </div>
+                <div class="flex-row search-bar-item2">
+                  <div class="status-opt status-all">All</div>
+                  <div class="status-opt status-all selected">Active</div>
+                  <div class="status-opt status-all">Inactive</div>
+                </div>
+              </div>
+            </div>
+            <div class="item-list">
+              <div></div>
+            </div>
+          </div>
+          <div class="col2 entry-div">
+            <div class="label compulsory-mark">Menu Code</div>
+            <div class="input-field">
+              <input
+                type="text"
+                class="txt-input menu-code-input"
+                placeholder="Menu Code..."
+                maxlength="50"
+              />
+            </div>
+            <div class="label compulsory-mark">Menu Description</div>
+            <div class="input-field">
+              <input
+                type="text"
+                class="txt-input menu-desc-input"
+                placeholder="Menu Description..."
+                maxlength="255"
+              />
+            </div>
+            <div class="label">Display Sequence</div>
+            <div class="input-field">
+              <input
+                type="text"
+                class="txt-input display-seq-input"
+                placeholder="Display Sequence..."
+                maxlength="10"
+              />
+            </div>
+            <div class="flex-row">
+              <div class="btn-checkbox0 is-active-input celchk"></div>
+              <div class="chk-lbl is-active0 celchk1">Active</div>
+            </div>
+            <div class="flex-row">
+              <div class="btn-checkbox0 sell-on-web-input celchk"></div>
+              <div class="chk-lbl sell-on-web0 celchk1">Sell on web</div>
+            </div>
+            <div class="flex-row">
+              <div class="btn-checkbox0 sell-in-outlet-input celchk"></div>
+              <div class="chk-lbl sell-in-outlet0 celchk1">
+                Sell in restaurant
+              </div>
+            </div>
+            <div class="season0">
+              <div class="flex-row">
+                <div class="complusory-mark">Season</div>
+                <div class="btn-select btn-select-season"></div>
+              </div>
+              <div class="sl0 season-input">
+                <div class="flex-row card">
+                  <div class="text">None</div>
+                </div>
+              </div>
+            </div>
+            <div class="prod0">
+              <div class="flex-row">
+                <div class="complusory-mark">Menu Items</div>
+                <div class="btn-select btn-select-prod"></div>
+              </div>
+              <div class="sl0 prod-input">
+                <div class="flex-row card">
+                  <dic class="text">None</dic>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

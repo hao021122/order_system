@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="shortcut icon"
+      href="/shortcut-icons/order-now.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/login.css" />
+    <link rel="stylesheet" type="text/css" href="/css/share-css.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img class="wave" src="/images/wave1.svg" alt="" />
+    <div class="container">
+      <div class="img">
+        <img src="/images/undraw_cooking_ov30.svg" alt="" />
+      </div>
+      <div class="login-container">
+        <form id="login-form">
+          <img
+            class="avatar"
+            src="/images/undraw_pic_profile_re_7g2h.svg"
+            alt=""
+          />
+          <h2>Welcome</h2>
+          <div class="input-div one focus">
+            <div class="i">
+              <span class="material-icons">
+                person
+                </span>
+            </div>
+            <div>
+              <input
+                id="username"
+                class="user-login-id-input"
+                type="text"
+                placeholder="Username"
+                spellcheck="false
+                "
+              />
+            </div>
+          </div>
+          <div class="input-div two">
+            <div class="i">
+              <span class="material-icons">lock </span>
+            </div>
+            <div>
+              <input
+                id="password"
+                class="user-password-input"
+                type="password"
+                placeholder="Password"
+              />
+            </div>
+          </div>
+          <input type="submit" class="btn" value="Login" />
+        </form>
+      </div>
+    </div>
+    <div id="popup-container">
+      <div id="popup-content">
+        <span id="popup-message"></span>
+        <span id="popup-close-btn" class="material-icons" onclick="hidePopup()">
+          close
+        </span>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/login/login.js"></script>
+  </body>
+</html>

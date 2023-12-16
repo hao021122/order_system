@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/shortcut-icons/quotation.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/share-css.css" />
+    <link rel="stylesheet" href="/css/order-settings.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Quotation Setting</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="set-receipt-div">
+        <div class="r1 flex-row space-between">
+            <div class="flex-row r btn-back0">
+              <div class="btn-back">
+                <span class="material-icons"> arrow_back_ios </span>
+              </div>
+              <div class="title">Quotation Setting</div>
+              <div class="loading"></div>
+            </div>
+  
+            <div class="action">
+              <div class="btn-add btn-bg1"></div>
+              <div class="btn-save btn-bg2">
+                <span class="material-icons"> save </span>
+              </div>
+              <div class="btn-delete btn-bg3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="c entry-div">
+            <div class="r2">
+                <div class="label">Quotation Header</div>
+                <div class="flex-row">
+                    <textarea class="quotation-header-input" spellcheck="true" name="" id="" placeholder="Quotation Header..."></textarea>
+                </div>
+            </div>
+            <div class="r2">
+                <div class="label">Quotation Footer</div>
+                <div class="flex-row">
+                    <textarea class="quotation-footer-input" spellcheck="true" name="" id="" placeholder="Quotation Footer..."></textarea>
+                </div>
+            </div>
+            <div class="r2">
+                <div class="label"># Line Feed at Footer</div>
+                <div class="input-field">
+                    <input type="text" class="txt-input no-of-blank-line-input" placeholder="Line Feed at Footer..." maxlength="2">
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div id="popup-container">
+      <div id="popup-content">
+        <span id="popup-message"></span>
+        <span id="popup-close-btn" class="material-icons"> close </span>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/settings/set-quotation-setting.js"></script>
+  </body>
+</html>

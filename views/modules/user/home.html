@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order | Home</title>
+    <!-- <link
+      rel="stylesheet"
+      type
+      href="/order/server/client-order/css/user-navigation.css"
+    /> -->
+    <link rel="stylesheet" href="/css/sidebar-user.css" />
+    <link rel="stylesheet" href="/css/share-css.css" />
+
+    <link rel="stylesheet" href="/css/material-icon.css" />
+    <link rel="stylesheet" href="/css/product.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <input type="hidden" id="doc_no" value="" />
+    <input type="hidden" id="pt_id" value="" />
+    <input type="hidden" id="cur_id" value="" />
+    <input type="hidden" id="co_id" value="" />
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon center-all"
+                ><img class="img" src="/images/order-now.png" alt=""
+              /></span>
+              <span class="title">Order System</span>
+            </a>
+          </li>
+          <li>
+            <a href="/order">
+              <span class="material-icons icon"> fastfood </span>
+              <span class="title">Order</span>
+            </a>
+          </li>
+          <li>
+            <a href="/order/cart">
+              <span class="material-icons icon"> shopping_cart </span>
+              <span class="title">Cart</span>
+            </a>
+          </li>
+          <li>
+            <a href="/order/order_history">
+              <span class="material-icons icon"> receipt </span>
+              <span class="title">Order History</span>
+            </a>
+          </li>
+          <li>
+            <a class="logout">
+              <span class="material-icons icon"> logout </span>
+              <span class="title">Sign Out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle">
+            <span class="material-icons"> menu </span>
+          </div>
+          <!-- Search Bar -->
+          <!-- <div class="search">
+            <label>
+              <input type="text" placeholder="Search Here" />
+              <ion-icon name="search-outline"></ion-icon>
+            </label>
+          </div> -->
+          <!-- User Image -->
+          <div class="user">
+            <img src="/images/user.png" />
+          </div>
+        </div>
+        <div class="category-box">
+          <div class="c-title">CATEGORIES</div>
+          <div class="categories-container">
+          </div>
+        </div>
+        <div class="box-card"></div>
+
+        <!-- <div class="card">
+          <div class="img-box">
+            <img src="/order/images/chocolate/chocolate_a.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h2>Chocolate</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
+              quia odio nostrum quo omnis, ex cum provident id cupiditate
+              possimus obcaecati doloribus, explicabo repellendus iste?
+              Consequatur ipsum repellat dolore quas!
+            </p>
+            <a href="">Add To Cart</a>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div id="popup-container">
+      <div id="popup-content">
+        <span id="popup-message"></span>
+        <span id="popup-close-btn" class="material-icons"> close </span>
+      </div>
+    </div>
+    <div class="template-div">
+      <div class="categories-container0">
+        <div class="category"></div>
+      </div>
+      <div class="box-card0">
+        <div class="header">
+          <div class="img-box"></div>
+        </div>
+        <div class="text">
+          <div class="prod-desc"></div>
+          <div class="prod-desc2"></div>
+          <div class="amt"></div>
+        </div>
+        <div class="sel-qty"></div>
+        <div class="action"></div>
+        <!-- <div class="flex-row center-all qty-adjustment">
+          <div class="btn-sm decrement">&#45;</div>
+          <input type="text" class="qty-input">
+          <div class="btn-sm increment">&#43;</div>
+        </div>
+        <a class="add-cart">
+          <span class="material-icons">
+          add_shopping_cart
+          </span>
+          <span>Add To Cart</span>
+        </a> -->
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/user/home.js"></script>
+    <script src="/js/login/logout.js"></script>
+    <script src="/js/sidebar.js"></script>
+  </body>
+</html>

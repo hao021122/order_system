@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Product</title>
+    <link rel="stylesheet" href="/css/share-css.css" />
+    <link rel="stylesheet" href="/css/order-settings.css" />
+    <link rel="stylesheet" href="/css/material-icon.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="add-product-div">
+        <div class="r1 flex-row space-between">
+          <div class="flex-row r btn-back0">
+            <div class="btn-back">
+              <span class="material-icons"> arrow_back_ios </span>
+            </div>
+            <div class="title">Product</div>
+            <div class="loading"></div>
+          </div>
+
+          <div class="flex-row action">
+            <div class="btn-add btn-bg1"></div>
+            <div class="btn-save btn-bg2">
+              <span class="material-icons"> save </span>
+            </div>
+            <div class="btn-delete btn-bg3"></div>
+          </div>
+        </div>
+        <div class="entry-div">
+          <form enctype="multipart/form-data">
+            <div class="input-field" style="display: none">
+              <input
+                type="text"
+                class="txt-input prod-id-input"
+                placeholder="Product ID..."
+                maxlength="255"
+              />
+            </div>
+            <div class="field flex-row">
+              <div class="left label compulsory-mark">Type</div>
+              <div class="right input-field space-around">
+                <input
+                  type="text"
+                  class="txt-input prod-type-input"
+                  maxlength="50"
+                />
+                <div class="btn-select btn-select-prod-type">
+                  <span class="material-icons"> queue </span>
+                </div>
+              </div>
+              <input type="hidden" class="prod-type-id" value="" />
+            </div>
+            <hr />
+            <div class="field flex-row">
+              <div class="left label compulsory-mark">Category</div>
+              <div class="right input-field space-around">
+                <input
+                  type="text"
+                  class="txt-input prod-cat-input"
+                  maxlength="50"
+                />
+                <div class="btn-select btn-select-prod-cat">
+                  <span class="material-icons"> queue </span>
+                </div>
+              </div>
+              <input type="hidden" class="prod-cat-id" value="" />
+            </div>
+            <hr />
+            <div class="field flex-row">
+              <div class="left label compulsory-mark">Group</div>
+              <div class="right input-field space-around">
+                <input
+                  type="text"
+                  class="txt-input prod-group-input"
+                  maxlength="50"
+                />
+                <div class="btn-select btn-select-prod-group">
+                  <span class="material-icons"> queue </span>
+                </div>
+              </div>
+              <input type="hidden" class="prod-group-id" value="" />
+            </div>
+            <hr />
+            <div class="field flex-row">
+              <div class="left label compulsory-mark">Item Code</div>
+              <div class="right input-field">
+                <input
+                  type="text"
+                  class="txt-input prod-code-input"
+                  placeholder="Item Code..."
+                  maxlength="50"
+                />
+              </div>
+            </div>
+            <hr />
+            <div class="field flex-row">
+              <div class="left label">Barcode</div>
+              <div class="right input-field">
+                <input
+                  type="text"
+                  class="txt-input barcode-input"
+                  placeholder="Barcode..."
+                  maxlength="50"
+                />
+              </div>
+            </div>
+            <hr />
+            <div class="field flex-row">
+              <div class="left label compulsory-mark">Description</div>
+              <div class="right input-field">
+                <input
+                  type="text"
+                  class="txt-input prod-desc-input"
+                  placeholder="Product Description..."
+                  maxlength="50"
+                />
+              </div>
+            </div>
+            <hr />
+            <div class="field flex-row">
+              <div class="left label compulsory-mark">Image</div>
+              <div class="right input-field">
+                <input type="file" class="txt-input image" />
+              </div>
+            </div>
+            <hr />
+            <div class="field flex-row">
+              <div
+                class="left chk-lbl is-active0 celchk1 label compulsory-mark"
+              >
+                Active
+              </div>
+              <div
+                class="right btn-checkbox0 is-active-input"
+                onclick="toggleCheckbox(this)"
+              >
+                <span class="material-icons"></span>
+              </div>
+            </div>
+            <hr />
+            <div class="field flex-row">
+              <div class="left label">Description 2 (Optional)</div>
+              <textarea
+                class="right prod-desc2-input"
+                spellcheck="true"
+              ></textarea>
+            </div>
+            <hr />
+            <div class="field flex-row">
+              <div class="left label compulsory-mark">Unit Of Measure</div>
+              <div class="right input-field space-around">
+                <input type="text" class="txt-input uom-input" maxlength="50" />
+                <div class="btn-select btn-select-uom">
+                  <span class="material-icons"> queue </span>
+                </div>
+              </div>
+              <input type="hidden" class="uom-id" value="" />
+            </div>
+            <hr />
+            <div class="field flex-row">
+              <div class="left label compulsory-mark">Start Selling From</div>
+              <div class="right input-field">
+                <input
+                  type="date"
+                  class="txt-input start-dt-input"
+                  maxlength="50"
+                />
+              </div>
+            </div>
+            <hr />
+            <div class="field flex-row">
+              <div class="left label compulsory-mark">Last Selling On</div>
+              <div class="right input-field">
+                <input
+                  type="date"
+                  class="txt-input end-dt-input"
+                  maxlength="50"
+                />
+              </div>
+            </div>
+            <hr />
+            <div class="field flex-row">
+              <div class="left label">Prepare Time (minutes)</div>
+              <div class="right input-field">
+                <input
+                  type="text"
+                  class="txt-input prepare-time-input"
+                  maxlength="50"
+                  placeholder="Minutes..."
+                />
+              </div>
+            </div>
+            <hr />
+            <div class="field addon0 selected-more">
+              <div class="flex-row r2 space-between">
+                <div>Add-ons</div>
+                <div class="btn-select btn-select-addon material-icons">
+                  <span class="material-icons"> queue </span>
+                </div>
+              </div>
+              <div class="s10 addon-input flex-row">
+                <div class="selected-addon">None</div>
+              </div>
+            </div>
+            <hr />
+            <div class="field request0 selected-more">
+              <div class="flex-row r2 space-between">
+                <div>Request</div>
+                <div class="btn-select btn-select-request material-icons">
+                  <span class="material-icons"> queue </span>
+                </div>
+              </div>
+              <div class="s10 request-input flex-row">
+                <div class="selected-addon">None</div>
+              </div>
+            </div>
+            <hr />
+            <div class="field flex-row">
+              <div class="left label">Price</div>
+              <div class="right input-field">
+                <input
+                  type="text"
+                  class="txt-input price-input"
+                  placeholder="0.00"
+                  maxlength="50"
+                />
+              </div>
+            </div>
+            <hr />
+            <div class="field flex-row">
+              <div class="left label">Cost</div>
+              <div class="right input-field">
+                <input
+                  type="text"
+                  class="txt-input cost-input"
+                  placeholder="0.00"
+                  maxlength="50"
+                />
+              </div>
+            </div>
+            <hr />
+            <div class="field flex-row">
+              <div class="left label">Tax #1</div>
+              <div class="right input-field space-around">
+                <input
+                  type="text"
+                  class="txt-input tax1-input"
+                  maxlength="50"
+                />
+                <div class="btn-select btn-select-tax1">
+                  <span class="material-icons"> queue </span>
+                </div>
+              </div>
+            </div>
+            <input type="hidden" class="tax1-code" value="" />
+            <hr />
+            <div class="field flex-row">
+              <div class="left chk-lbl include-tax1-input0 celchk1">
+                Price Include Tax #1
+              </div>
+              <div
+                class="right btn-checkbox0 include-tax1-input"
+                onclick="toggleCheckbox(this)"
+              >
+                <span class="material-icons"></span>
+              </div>
+            </div>
+            <hr />
+            <div class="field flex-row">
+              <div class="left label">Tax #2</div>
+              <div class="right input-field space-around">
+                <input
+                  type="text"
+                  class="txt-input tax2-input"
+                  maxlength="50"
+                />
+                <div class="btn-select btn-select-tax2">
+                  <span class="material-icons"> queue </span>
+                </div>
+              </div>
+            </div>
+            <input type="hidden" class="tax2-code" value="" />
+            <hr />
+            <div class="field flex-row">
+              <div class="left chk-lbl include-tax2-input0 celchk1">
+                Price Include Tax #2
+              </div>
+              <div
+                class="right btn-checkbox0 include-tax2-input"
+                onclick="toggleCheckbox(this)"
+              >
+                <span class="material-icons"></span>
+              </div>
+            </div>
+            <hr />
+            <div class="field flex-row">
+              <div class="left chk-lbl calc-after-tax1-input0 celchk1">
+                Calculate Tax #2 after Tax #1
+              </div>
+              <div
+                class="right btn-checkbox0 calc-after-tax1-input"
+                onclick="toggleCheckbox(this)"
+              >
+                <span class="material-icons"></span>
+              </div>
+            </div>
+            <hr />
+            <div class="sample">
+              <h3 class="sample-title">Sample</h3>
+              <div class="flex-row sample-row">
+                <div class="sample-content">Gross Price:</div>
+                <div class="sample-amt gross-amt">RM0.00</div>
+              </div>
+              <div class="flex-row sample-row">
+                <div class="sample-content">Tax #1:</div>
+                <div class="sample-amt t1">RM0.00</div>
+              </div>
+              <div class="flex-row sample-row">
+                <div class="sample-content">Tax #2:</div>
+                <div class="sample-amt t2">RM0.00</div>
+              </div>
+              <div class="flex-row sample-row">
+                <div class="sample-content">Net Price:</div>
+                <div class="sample-amt net-amt">RM0.00</div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="product-type">
+      <div id="product-type-content">
+        <div id="product-type-close-btn" class="flex-row">
+          <span class="material-icons"> arrow_back_ios </span>
+          <span class="title">Back</span>
+        </div>
+        <span id="product-type-item"></span>
+      </div>
+    </div>
+    <div id="product-cat">
+      <div id="product-cat-content">
+        <div id="product-cat-close-btn" class="flex-row">
+          <span class="material-icons"> arrow_back_ios </span>
+          <span class="title">Back</span>
+        </div>
+        <span id="product-cat-item"></span>
+      </div>
+    </div>
+    <div id="product-group">
+      <div id="product-group-content">
+        <div id="product-group-close-btn" class="flex-row">
+          <span class="material-icons"> arrow_back_ios </span>
+          <span class="title">Back</span>
+        </div>
+        <span id="product-group-item"></span>
+      </div>
+    </div>
+    <div id="uom">
+      <div id="uom-content">
+        <div id="uom-close-btn" class="flex-row">
+          <span class="material-icons"> arrow_back_ios </span>
+          <span class="title">Back</span>
+        </div>
+        <span id="uom-item"></span>
+      </div>
+    </div>
+    <div id="addon">
+      <div id="addon-content">
+        <div id="addon-close-btn" class="flex-row">
+          <span class="material-icons"> arrow_back_ios </span>
+          <span class="title">Back</span>
+        </div>
+        <span id="addon-item"></span>
+      </div>
+    </div>
+    <div id="request">
+      <div id="request-content">
+        <div id="request-close-btn" class="flex-row">
+          <span class="material-icons"> arrow_back_ios </span>
+          <span class="title">Back</span>
+        </div>
+        <span id="request-item"></span>
+      </div>
+    </div>
+    <div id="tax1">
+      <div id="tax1-content">
+        <div id="tax1-close-btn" class="flex-row">
+          <span class="material-icons"> arrow_back_ios </span>
+          <span class="title">Back</span>
+        </div>
+        <span id="tax1-item"></span>
+      </div>
+    </div>
+    <div id="tax2">
+      <div id="tax2-content">
+        <div id="tax2-close-btn" class="flex-row">
+          <span class="material-icons"> arrow_back_ios </span>
+          <span class="title">Back</span>
+        </div>
+        <span id="tax2-item"></span>
+      </div>
+    </div>
+    <div id="popup-container">
+      <div id="popup-content">
+        <span id="popup-message"></span>
+        <span id="popup-close-btn" class="material-icons"> close </span>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/settings/add-product.js"></script>
+  </body>
+</html>

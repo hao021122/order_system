@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Palatino", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.user-navigation {
+  width: 100%;
+  height: 60px;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: orange; */
+}
+
+.user-navigation .logo {
+  width: 120px;
+  height: 50px;
+}
+
+.user-navigation .logo .img {
+  width: 60px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-navigation .menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.user-navigation .menu li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.user-navigation .toggle-menu {
+  cursor: pointer;
+  display: none;
+}
+
+.user-navigation .action-btn {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Styling for the categories box */
+.categories-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* max-width: 1000px; */
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+/* Styling for each category item */
+.category {
+  width: 150px;
+  text-align: center;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.category img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.category span {
+  display: block;
+  font-size: 14px;
+}
+
+/* Add any additional styling or effects as needed */
+
+/* @media screen and (min-width: 476px) {
+  .user-navigation .categories,
+  .user-navigation .action-btn {
+    display: none;
+  }
+
+  .user-navigation .action-btn .toggle-menu {
+    display: block;
+  }
+} */

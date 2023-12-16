@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/shortcut-icons/gear.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/share-css.css" />
+    <link rel="stylesheet" href="/css/sidebar.css" />
+    <link rel="stylesheet" href="/css/settings.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Settings</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon center-all"
+                ><img class="img" src="/images/order-now.png" alt=""
+              /></span>
+              <span class="title">Order System</span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/dashboard">
+              <span class="material-icons icon"> dashboard </span>
+              <span class="title">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/order_history">
+              <span class="material-icons icon">
+                history
+                </span>
+              <span class="title">Order List</span>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="/admin/report">
+              <span class="material-icons icon"> article </span>
+              <span class="title">Report</span>
+            </a>
+          </li> -->
+          <li>
+            <a href="/admin/settings">
+              <span class="material-icons icon"> settings </span>
+              <span class="title">Settings </span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/audit_log">
+              <span class="material-icons icon"> text_snippet </span>
+              <span class="title">Audit Log </span>
+            </a>
+          </li>
+          <li>
+            <a class="logout">
+              <span class="material-icons icon"> logout </span>
+              <span class="title">Sign Out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!--  Main Content -->
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle">
+            <span class="material-icons"> menu </span>
+          </div>
+          <!-- Search Bar -->
+          <!-- <div class="search">
+            <label>
+              <input type="text" placeholder="Search Here" />
+              <ion-icon name="search-outline"></ion-icon>
+            </label>
+          </div> -->
+          <!-- User Image -->
+          <div class="user">
+            <img src="/images/user.png" />
+          </div>
+        </div>
+
+        <!-- <div class="big-title">
+          <span class="material-icons">
+            inventory
+            </span>
+          <h2>Product - Settings</h2>
+        </div>
+        <hr/> -->
+        <div class="cardBox">
+          <a href="/admin/addon">
+            <div class="item-menu">
+              <div>
+                <div class="settings-title">Addon</div>
+              </div>
+              <div class="iconBox">
+                <img src="/images/icons/setting.png" alt="" class="icons">
+              </div>
+            </div>
+          </a>
+          <a href="/admin/category">
+          <div class="item-menu">
+            <div>
+              <div class="settings-title">Category</div>
+            </div>
+            <div class="iconBox">
+              <img src="/images/icons/app.png" alt="" class="icons">
+            </div>
+          </div>
+          </a>
+          <a href="/admin/group">
+            <div class="item-menu">
+              <div>
+                <div class="settings-title">Group</div>
+              </div>
+              <div class="iconBox">
+                <img src="/images/icons/hierarchical-structure.png" alt="" class="icons">
+              </div>
+            </div>
+          </a>
+          <a href="/admin/mailbox">
+            <div class="item-menu">
+              <div>
+                <div class="settings-title">Mailbox</div>
+              </div>
+              <div class="iconBox">
+                <img src="/images/icons/email.png" alt="" class="icons">
+              </div>
+            </div>
+          </a>
+          <a href="/admin/menu_item">
+            <div class="item-menu">
+              <div>
+                <div class="settings-title">Menu</div>
+              </div>
+              <div class="iconBox">
+                <img src="/images/icons/menu.png" alt="" class="icons">
+              </div>
+            </div>
+          </a>
+          <a href="/admin/outlet">
+            <div class="item-menu">
+              <div>
+                <div class="settings-title">Outlet Profile</div>
+              </div>
+              <div class="iconBox">
+                <img src="/images/icons/outlet.png" alt="" class="icons">
+              </div>
+            </div>
+          </a>
+          <a href="/admin/payment">
+            <div class="item-menu">
+              <div>
+                <div class="settings-title">Payment Type</div>
+              </div>
+              <div class="iconBox">
+                <img src="/images/icons/payment-method.png" alt="" class="icons">
+              </div>
+            </div>
+          </a>
+          <a href="/admin/quotation_setting">
+            <div class="item-menu">
+              <div>
+                <div class="settings-title">Quatation Setting</div>
+              </div>
+              <div class="iconBox">
+                <img src="/images/icons/quotation.png" alt="" class="icons">
+              </div>
+            </div>
+          </a>
+          <a href="/admin/request">
+          <div class="item-menu"> 
+            <div>
+              <div class="settings-title">Request</div>
+            </div>
+            <div class="iconBox">
+              <img src="/images/icons/demand.png" alt="" class="icons">
+            </div>
+          </div>
+        </a>
+        <!-- <a href="/client-order/order/modules/settings/set-season.html">
+          <div class="item-menu">
+            <div>
+              <div class="settings-title">Season</div>
+            </div>
+            <div class="iconBox">
+              <img src="/client-order/order/images/icons/calendar.png" alt="" class="icons">
+            </div>
+          </div>
+        </a> -->
+        <a href="/admin/tax">
+          <div class="item-menu">
+            <div>
+              <div class="settings-title">Tax</div>
+            </div>
+            <div class="iconBox">
+              <img src="/images/icons/taxes.png" alt="" class="icons">
+            </div>
+          </div>
+        </a>
+        <a href="/admin/uom">
+          <div class="item-menu">
+            <div>
+              <div class="settings-title">Unit of Measure</div>
+            </div>
+            <div class="iconBox">
+              <img src="/images/icons/measuring-cup.png" alt="" class="icons">
+            </div>
+          </div>
+        </a>
+        <a href="/admin/users">
+          <div class="item-menu">
+            <div>
+              <div class="settings-title">User</div>
+            </div>
+            <div class="iconBox">
+              <img src="/images/icons/add-user.png" alt="" class="icons">
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+  <!-- JS Script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/js/login/logout.js"></script>
+  <script src="/js/sidebar.js"></script>
+  </body>
+</html>

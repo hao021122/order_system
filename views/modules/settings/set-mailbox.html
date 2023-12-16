@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/shortcut-icons/mail.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/share-css.css" />
+    <link rel="stylesheet" href="/css/order-settings.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Mailbox</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="s-mail-div">
+        <div class="r1 flex-row space-between">
+          <div class="flex-row r btn-back0">
+            <div class="btn-back">
+              <span class="material-icons"> arrow_back_ios </span>
+            </div>
+            <div class="title">Mailbox Settings</div>
+            <div class="loading"></div>
+          </div>
+
+          <div class="action space-between">
+            <div class="btn-add btn-bg1"></div>
+            <div class="btn-save btn-bg2">
+              <span class="material-icons"> save </span>
+            </div>
+            <div class="btn-delete btn-bg3"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="c entry-div">
+        <div class="flex-row enable-smtp1">
+          <div
+            class="btn-checkbox0 enable-smtp-input"
+            onclick="toggleCheckbox(this)"
+          >
+            <span class="material-icons"></span>
+          </div>
+          <div class="chk-lbl enable-smtp0 celchk1">Enable Email Service</div>
+        </div>
+        <div class="label compulsory-mark">SMTP Server</div>
+        <div class="input-field">
+          <input
+            type="text"
+            class="txt-input server-input"
+            placeholder="SMTP Server..."
+            maxlength="255"
+          />
+        </div>
+        <div class="label compulsory-mark">Port</div>
+        <div class="input-field">
+          <input
+            type="text"
+            class="txt-input port-input"
+            placeholder="Port..."
+            maxlength="5"
+          />
+        </div>
+        <div class="label compulsory-mark">Email Address</div>
+        <div class="input-field">
+          <input
+            type="text"
+            class="txt-input mailbox-uid-input"
+            placeholder="Email Address..."
+            maxlength="255"
+          />
+        </div>
+        <div class="label compulsory-mark">Password</div>
+        <div class="input-field">
+          <input
+            type="password"
+            class="txt-input mailbox-pwd-input"
+            placeholder="Password..."
+            maxlength="255"
+          />
+        </div>
+        <div class="flex-row">
+          <div
+            class="btn-checkbox0 use-ssl-input"
+            onclick="toggleCheckbox(this)"
+          >
+            <span class="material-icons"></span>
+          </div>
+          <div class="chk-lbl use-ssl0 celchk1">Use SSL</div>
+        </div>
+        <div class="flex-row btn-send-mail0" style="display: none">
+          <div class="btn-send-mail"></div>
+          <div class="t0">Send a Test Email</div>
+        </div>
+      </div>
+    </div>
+    <div id="popup-container">
+      <div id="popup-content">
+        <span id="popup-message"></span>
+        <span id="popup-close-btn" class="material-icons"> close </span>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/settings/set-mailbox.js"></script>
+  </body>
+</html>

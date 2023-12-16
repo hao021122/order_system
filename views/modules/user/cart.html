@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/shortcut-icons/shopping-cart.png"
+      type="image/x-icon"
+    />
+    <title>My Cart</title>
+    <link rel="stylesheet" href="/css/user-navigation.css" />
+    <link rel="stylesheet" href="/css/material-icon.css" />
+    <link rel="stylesheet" href="/css/share-css.css" />
+    <link rel="stylesheet" href="/css/product.css" />
+  </head>
+  <body>
+    <input type="hidden" id="doc_no" value="" />
+    <input type="hidden" id="pt_id" value="" />
+    <div class="container">
+      <div class="flex-row top">
+        <div class="btn-back">
+          <span class="material-icons"> arrow_back_ios </span>
+        </div>
+        <div class="my-cart">
+          <span class="material-icons"> shopping_bag </span>
+          <span class="my-cart-title">My Cart</span>
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="box">
+          <div class="box blue" style="padding-left: 30px;">
+            <div class="flex-row space-between">
+              <div>
+                <div id="reference-number"></div>
+                <div id="date"></div>
+              </div>
+             <div>
+              <div class="checkout">Checkout</div>
+             </div>
+            </div>
+          </div>
+          <div class="box-content"> 
+            <div class="r5">Product</div>
+            <div class="r5">Description</div>
+            <div class="r5">Quantity</div>
+            <div class="r5">Price</div>
+            <div class="r5">Addon</div>
+            <div class="r5">Request</div>
+            <div class="r2">Action</div>
+          </div>
+          <div class="cart">
+            
+          </div>
+        </div>
+        <!-- <div class="summary">
+          <h3>Summary</h3>
+          <table>
+            <tr>
+              <th class="summary-title">Delivery Fee</th>
+              <td class="summary-amt">RM5.00</td>
+            </tr>
+            <tr>
+              <th class="summary-title">Discount</th>
+              <td class="summary-amt">(RM5.00)</td>
+            </tr>
+            <tr>
+              <th class="summary-title">Tax</th>
+              <td class="summary-amt">RM5.00</td>
+            </tr>
+            <tr>
+              <th class="summary-title sub-total">Sub-Total</th>
+              <td class="summary-amt sub-total">RM10.00</td>
+            </tr>
+          </table>
+          <div class="cart-action">
+            <button class="checkout" data-row-index="0" type="submit">
+              Checkout
+            </button>
+            <button class="continue" type="submit">
+              <a href="/order">Continue Shopping</a>
+            </button>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div id="popup-container">
+      <div id="popup-content">
+        <span id="popup-message"></span>
+        <span id="popup-close-btn" class="material-icons"> close </span>
+      </div>
+    </div>
+    <div class="template-div">
+      <div class="cart0">
+        <div class="r5 prod-img"></div>
+        <div class="r5 prod-desc"></div>
+        <div class="flex-row center-all qty-adjustment">
+          <div class="btn-sm decrement">&#45;</div>
+          <input type="text" class="r5 qty" value="1">
+          <div class="btn-sm increment">&#43;</div>
+        </div>
+        <div class="r5 price"></div>
+        <div class="r5 addon"></div>
+        <div class="r5 request"></div>
+        <div class="r2 action">
+          <span class="material-icons delete-line" style="color: red"> delete </span>
+          <span class="material-icons save-line">check</span>
+        </div>
+      </div>
+      <div class="summary0">
+        
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/library.js"></script>
+    <script src="/js/user/cart.js"></script>
+  </body>
+</html>

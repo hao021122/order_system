@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/client-order/order/shortcut-icons/condiments.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/share-css.css" />
+    <link rel="stylesheet" href="/css/order-settings.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Condiment</title>
+  </head>
+  <body>
+    <!-- Template Start -->
+    <div class="container">
+      <div class="setup-prod-condi-div">
+        <div class="r1 flex-row">
+          <div class="flex-row r btn-back0">
+            <div class="btn-back"></div>
+            <div class="title">Condiment</div>
+            <div class="loading"></div>
+          </div>
+
+          <div class="action">
+            <div class="btn-add btn-bg1"></div>
+            <div class="btn-save btn-bg2"></div>
+            <div class="btn-delete btn-bg3"></div>
+          </div>
+        </div>
+
+        <div class="flex-row">
+          <div class="col1">
+            <div>
+              <div class="flex-row search-bar0">
+                <div class="input-field">
+                  <input
+                    type="text"
+                    class="txt-input search-description"
+                    placeholder="Search..."
+                  />
+                </div>
+                <div class="btn-search">
+                  <span class="material-icons icon"> search </span>
+                </div>
+              </div>
+              <div class="flex-row space-between search-bar-detail">
+                <div class="flex-row search-bar-item1">
+                  <div># of records:</div>
+                </div>
+                <div class="flex-row search-bar-item2">
+                  <div class="status-opt status-all">All</div>
+                  <div class="status-opt status-all selected">Active</div>
+                  <div class="status-opt status-all">Inactive</div>
+                </div>
+              </div>
+            </div>
+            <div class="item-list">
+              <div></div>
+            </div>
+          </div>
+          <div class="col2 entry-div">
+            <div class="label compulsory-mark">Condiment Code</div>
+            <div class="input-field">
+              <input
+                type="text"
+                class="txt-input condiment-code-input"
+                placeholder="Condiment Code..."
+                maxlength="50"
+              />
+            </div>
+            <div class="label compulsory-mark">Condiment Description</div>
+            <div class="input-field">
+              <input
+                type="text"
+                class="txt-input condiment-desc-input"
+                placeholder="Condiment Description..."
+                maxlength="255"
+              />
+            </div>
+            <div class="label">Remarks</div>
+            <div class="input-field">
+              <input
+                type="text"
+                class="txt-input remarks-input"
+                placeholder="Display Sequence..."
+                maxlength="10"
+              />
+            </div>
+            <div class="label">Display Sequence</div>
+            <div class="input-field">
+              <input
+                type="text"
+                class="txt-input display-seq-input"
+                placeholder="Display Sequence..."
+                maxlength="10"
+              />
+            </div>
+            <div class="flex-row">
+              <div class="btn-checkbox0 is-active-input celchk"></div>
+              <div class="chk-lbl is-active0 celchk1">Active</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

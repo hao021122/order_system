@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Record</title>
+    <link rel="stylesheet" type="text/css" href="/css/sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="/css/share-css.css" />
+    <link rel="stylesheet" type="text/css" href="/css/material-icon.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon center-all"
+                ><img class="img" src="/images/order-now.png" alt=""
+              /></span>
+              <span class="title">Order System</span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/dashboard">
+              <span class="material-icons icon"> dashboard </span>
+              <span class="title">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/order_history">
+              <span class="material-icons icon"> history </span>
+              <span class="title">Order List</span>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="/admin/report">
+              <span class="material-icons icon"> article </span>
+              <span class="title">Report</span>
+            </a>
+          </li> -->
+          <li>
+            <a href="/admin/settings">
+              <span class="material-icons icon"> settings </span>
+              <span class="title">Settings </span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/audit_log">
+              <span class="material-icons icon"> text_snippet </span>
+              <span class="title">Audit Log </span>
+            </a>
+          </li>
+          <li>
+            <a class="logout">
+              <span class="material-icons icon"> logout </span>
+              <span class="title">Sign Out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!--  Main Content -->
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle">
+            <span class="material-icons"> menu </span>
+          </div>
+          <!-- Search Bar -->
+          <!-- <div class="search">
+              <label>
+                <input type="text" placeholder="Search Here" />
+                <span class="material-icons icon">
+                  search
+                  </span>
+              </label>
+            </div> -->
+          <!-- User Image -->
+          <div class="user">
+            <img src="/images/user.png" />
+          </div>
+        </div>
+
+          <div class="full">
+            <h1>Order List</h1>
+            <div class="box">
+              <div class="history-table">
+                <div class="r4">Ordered by</div>
+                <div class="r4">Reference #</div>
+                <div class="r4">Ordered Date</div>
+                <div class="r4">Amount</div>
+                <div class="r4">Status</div>
+              </div>
+              <div class="order-history"></div>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+    <div class="template-div">
+      <div class="order-history0">
+        <div class="r4 created-by"></div>
+        <div class="r4 doc-no"></div>
+        <div class="r4 created-on"></div>
+        <div class="r4 amount"></div>
+        <div class="r4 status"></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/login/logout.js"></script>
+    <script src="/js/admin/order-record.js"></script>
+    <script src="/js/sidebar.js"></script>
+  </body>
+</html>

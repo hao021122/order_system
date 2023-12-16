@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/shortcut-icons/dashboard.png"
+      type="image/x-icon"
+    />
+
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="/css/sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="/css/share-css.css" />
+    <link rel="stylesheet" type="text/css" href="/css/material-icon.css" />
+    <!-- <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    /> -->
+  </head>
+  <body>
+    <input type="hidden" id="cur_id" value="" />
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon center-all"
+                ><img class="img" src="/images/order-now.png" alt=""
+              /></span>
+              <span class="title">Order System</span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/dashboard">
+              <span class="material-icons icon"> dashboard </span>
+              <span class="title">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/order_history">
+              <span class="material-icons icon">
+                history
+                </span>
+              <span class="title">Order List</span>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="/admin/report">
+              <span class="material-icons icon"> article </span>
+              <span class="title">Report</span>
+            </a>
+          </li> -->
+          <li>
+            <a href="/admin/settings">
+              <span class="material-icons icon"> settings </span>
+              <span class="title">Settings </span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/audit_log">
+              <span class="material-icons icon"> text_snippet </span>
+              <span class="title">Audit Log </span>
+            </a>
+          </li>
+          <li>
+            <a class="logout">
+              <span class="material-icons icon"> logout </span>
+              <span class="title">Sign Out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!--  Main Content -->
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle">
+            <span class="material-icons"> menu </span>
+          </div>
+          <!-- Search Bar -->
+          <div class="search">
+            <label>
+              <input type="text" placeholder="Search Here" />
+              <span class="material-icons icon">
+                search
+                </span>
+            </label>
+          </div>
+          <!-- User Image -->
+          <div class="user">
+            <img src="/images/user.png" />
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="cardBox">
+          <div class="card daily-view">
+            <div>
+              <div class="numbers">0</div>
+              <div class="cardName">Daily View</div>
+            </div>
+            <div class="iconBox">
+              <span class="material-icons"> visibility </span>
+            </div>
+          </div>
+
+          <div class="card sales">
+            <div>
+              <div class="numbers">0</div>
+              <div class="cardName">Sales</div>
+            </div>
+            <div class="iconBox">
+              <span class="material-icons"> shopping_cart </span>
+            </div>
+          </div>
+
+          <div class="card comments">
+            <div>
+              <div class="numbers">0</div>
+              <div class="cardName">Comments</div>
+            </div>
+            <div class="iconBox">
+              <span class="material-icons"> chat </span>
+            </div>
+          </div>
+
+          <div class="card earning">
+            <div>
+              <div class="numbers">RM0</div>
+              <div class="cardName">Earning</div>
+            </div>
+            <div class="iconBox">
+              <span class="material-icons"> local_atm </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="details">
+          <!-- Data List -->
+          <div class="recentOrders">
+            <div class="cardHeader">
+              <h2>Recent Orders</h2>
+              <a href="#" class="btn">View All</a>
+            </div>
+            <div class="cardContent">
+              <div class="card-title">
+                <div class="r4">Customer Name</div>
+                <div class="r4">Quotation #</div>
+                <div class="r2">Amount</div>
+                <div class="r2">Status</div>
+              </div>
+              <div class="item-line">
+
+              </div>
+            </div>
+            <!-- <table>
+              <thead>
+                <tr class="back-bg white-ft">
+                  <td>Customer Name</td>
+                  <td>Amount</td>
+                  <td>Payment</td>
+                  <td>Status</td>
+                </tr>
+              </thead>
+              <tbody class="item-line"> -->
+                <!-- <tr>
+                  <td>Star Refrigerator</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Star Refrigerator</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Star Refrigerator</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status return">Return</span></td>
+                </tr>
+                <tr>
+                  <td>Star Refrigerator</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status inprogress">In Progress</span></td>
+                </tr>
+                <tr>
+                  <td>Star Refrigerator</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Star Refrigerator</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Star Refrigerator</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Star Refrigerator</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr> -->
+              <!-- </tbody>
+            </table> -->
+          </div>
+
+          <!-- New CUstomers -->
+          <div class="recentCustomers">
+            <div class="cardHeader">
+              <h2>Recent Customers</h2>
+            </div>
+            <table>
+              <tr>
+                <td width="60px">
+                  <div class="imgBx"><img src="/images/user.png" /></div>
+                </td>
+                <td>
+                  <h4>David<br /><span>Italy</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td width="60px">
+                  <div class="imgBx"><img src="/images/user.png" /></div>
+                </td>
+                <td>
+                  <h4>David<br /><span>Italy</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td width="60px">
+                  <div class="imgBx"><img src="/images/user.png" /></div>
+                </td>
+                <td>
+                  <h4>David<br /><span>Italy</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td width="60px">
+                  <div class="imgBx"><img src="/images/user.png" /></div>
+                </td>
+                <td>
+                  <h4>David<br /><span>Italy</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td width="60px">
+                  <div class="imgBx"><img src="/images/user.png" /></div>
+                </td>
+                <td>
+                  <h4>David<br /><span>Italy</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td width="60px">
+                  <div class="imgBx"><img src="/images/user.png" /></div>
+                </td>
+                <td>
+                  <h4>David<br /><span>Italy</span></h4>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="template-div">
+      <div class="item-line0">
+          <div class="r4 cust-name"></div>
+          <div class="r4 doc-no"></div> 
+          <div class="r2 amount"></div>
+          <div class="r2 status"></div>
+      </div>
+    </div>
+    <!-- JS Script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/login/logout.js"></script>
+    <script src="/js/admin/dashboard.js"></script>
+    <script src="/js/sidebar.js"></script>
+  </body>
+</html>

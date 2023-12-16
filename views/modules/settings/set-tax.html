@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/shortcut-icons/taxes.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/share-css.css" />
+    <link rel="stylesheet" href="/css/order-settings.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Tax</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="set-tax-div">
+        <div class="r1 flex-row space-between">
+          <div class="flex-row r btn-back0">
+            <div class="btn-back">
+              <span class="material-icons"> arrow_back_ios </span>
+            </div>
+            <div class="title">Tax</div>
+            <div class="loading"></div>
+          </div>
+
+          <div class="flex-row action">
+            <div class="btn-add btn-bg1">
+              <span class="material-icons"> add_box </span>
+            </div>
+            <div class="btn-save btn-bg2">
+              <span class="material-icons"> save </span>
+            </div>
+            <div class="btn-delete btn-bg3">
+              <span class="material-icons"> delete_forever </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="col1">
+          <div>
+            <div class="flex-row search-bar0">
+              <div class="input-field">
+                <input
+                  type="text"
+                  class="txt-input search-description"
+                  placeholder="Search..."
+                />
+              </div>
+              <div class="btn-search">
+                <span class="material-icons icon"> search </span>
+              </div>
+            </div>
+            <div class="flex-row space-between search-bar-detail">
+              <div class="flex-row search-bar-item1">
+                <div># of records:</div>
+              </div>
+              <div class="flex-row search-bar-item2">
+                <div class="status-opt status-all">All</div>
+                <div class="status-opt status-all selected">Active</div>
+                <div class="status-opt status-all">Inactive</div>
+              </div>
+            </div>
+          </div>
+          <div class="item-list">
+            <div></div>
+          </div>
+        </div>
+        <div class="col2 entry-div">
+          <div class="input-field" style="display: none">
+            <input
+              type="hidden"
+              class="txt-input tax-id-input"
+              placeholder="Tax Id..."
+              maxlength="50"
+            />
+          </div>
+          <div>
+            <div class="label compulsory-mark">Tax Code</div>
+            <div class="input-field">
+              <input
+                type="text"
+                class="txt-input tax-code-input"
+                placeholder="Tax Code..."
+                maxlength="50"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="label compulsory-mark">Tax Description</div>
+            <div class="input-field">
+              <input
+                type="text"
+                class="txt-input tax-desc-input"
+                placeholder="Tax Description..."
+                maxlength="255"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="label compulsory-mark">Effective From</div>
+            <div class="flex-row">
+              <div class="input-field">
+                <input
+                  type="date"
+                  class="txt-input start-dt-input celDatePicker"
+                  placeholder="Date From"
+                  maxlength="20"
+                />
+              </div>
+              <div class="btn-calendar btn-start-dt"></div>
+            </div>
+          </div>
+          <div>
+            <div class="label compulsory-mark">Effective To</div>
+            <div class="flex-row">
+              <div class="input-field">
+                <input
+                  type="date"
+                  class="txt-input end-dt-input celDatePicker"
+                  placeholder="Date To"
+                  maxlength="20"
+                />
+              </div>
+              <div class="btn-calendar btn-end-dt"></div>
+            </div>
+          </div>
+          <div>
+            <div class="label compulsory-mark2">Tax %</div>
+            <div class="input-field">
+              <input
+                type="text"
+                class="txt-input tax-pct-input"
+                placeholder="Tax in %..."
+              />
+            </div>
+          </div>
+          <div>
+            <div class="compulsory-mark2">Fixed Amount</div>
+            <div class="input-field">
+              <input
+                type="text"
+                class="txt-input tax-amt-input"
+                placeholder="Tax in Fixed Amount..."
+                maxlength="2"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="label">Display Sequence</div>
+            <div class="input-field">
+              <input
+                type="text"
+                class="txt-input display-seq-input"
+                placeholder="Display Sequence..."
+                maxlength="5"
+              />
+            </div>
+          </div>
+          <div class="flex-row">
+            <div
+              class="btn-checkbox0 is-active-input"
+              onclick="toggleCheckbox(this)"
+            >
+              <span class="material-icons"></span>
+            </div>
+            <div class="chk-lbl is-active0 celchk1">
+              Show This Item in the Selection List
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="template-div">
+      <div class="tax-item0">
+        <div class="items-25 tax-code"></div>
+        <div class="items-25 modified-on"></div>
+        <div class="items-25 modified-by"></div>
+        <div class="items-25 btn-delete">
+          <span class="material-icons"> delete_forever </span>
+        </div>
+      </div>
+    </div>
+    <div id="popup-container">
+      <div id="popup-content">
+        <span id="popup-message"></span>
+        <span id="popup-close-btn" class="material-icons"> close </span>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/settings/set-tax.js"></script>
+  </body>
+</html>

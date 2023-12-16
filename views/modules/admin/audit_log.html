@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/shortcut-icons/log-file.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/sidebar.css" />
+    <title>Audit Log</title>
+    <link rel="stylesheet" href="/css/share-css.css" />
+    <link rel="stylesheet" href="/css/material-icon.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon center-all"
+                ><img class="img" src="/images/order-now.png" alt=""
+              /></span>
+              <span class="title">Order System</span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/dashboard">
+              <span class="material-icons icon"> dashboard </span>
+              <span class="title">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/order_history">
+              <span class="material-icons icon">
+                history
+                </span>
+              <span class="title">Order List</span>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="/admin/report">
+              <span class="material-icons icon"> article </span>
+              <span class="title">Report</span>
+            </a>
+          </li> -->
+          <li>
+            <a href="/admin/settings">
+              <span class="material-icons icon"> settings </span>
+              <span class="title">Settings </span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/audit_log">
+              <span class="material-icons icon"> text_snippet </span>
+              <span class="title">Audit Log </span>
+            </a>
+          </li>
+          <li>
+            <a class="logout">
+              <span class="material-icons icon"> logout </span>
+              <span class="title">Sign Out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!--  Main Content -->
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle">
+            <span class="material-icons"> menu </span>
+          </div>
+          <!-- Search Bar -->
+          <div class="search">
+            <label>
+              <input type="text" placeholder="Search Here" />
+              <ion-icon name="search-outline"></ion-icon>
+            </label>
+          </div>
+          <!-- User Image -->
+          <div class="user">
+            <img src="/images/user.png" />
+          </div>
+        </div>
+
+        <div class="audit-log-content">
+          <div class="audit-log-title">
+            <h2>Audit Log</h2>
+          </div>
+          <div class="log-title">
+            <div class="audit-log">
+              <div class="w1 module-title">Module Name</div>
+              <div class="w2 modified-on-title">Last Modified On</div>
+              <div class="w1 modified-by-title">Last Modified By</div>
+              <div class="w3 task-title">Task</div>
+          </div>
+          <div class="log-item"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/login/logout.js"></script>
+    <script src="/js/admin/audit-log.js"></script>
+    <script src="/js/sidebar.js"></script>
+  </body>
+</html>

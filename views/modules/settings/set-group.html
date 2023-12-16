@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/shortcut-icons/hierarchical-structure.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/share-css.css" />
+    <link rel="stylesheet" href="/css/order-settings.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Group</title>
+  </head>
+  <body>
+    <!-- Template Start -->
+    <div class="container">
+      <div class="setup-prod-addon-div">
+        <div class="r1 flex-row space-between">
+          <div class="flex-row r btn-back0">
+            <div class="btn-back">
+              <span class="material-icons"> arrow_back_ios </span>
+            </div>
+            <div class="title">Group</div>
+            <div class="loading"></div>
+          </div>
+
+          <div class="flex-row action">
+            <div class="btn-add btn-bg1">
+              <span class="material-icons"> add_box </span>
+            </div>
+            <div class="btn-save btn-bg2">
+              <span class="material-icons"> save </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-row">
+          <div class="col1">
+            <div>
+              <div class="flex-row search-bar0">
+                <div class="input-field">
+                  <input
+                    type="text"
+                    class="txt-input search-description"
+                    placeholder="Search..."
+                  />
+                </div>
+              </div>
+              <div class="flex-row space-between search-bar-detail">
+                <div class="flex-row search-bar-item1">
+                  <div># of records:</div>
+                </div>
+                <div class="flex-row search-bar-item2">
+                  <div class="status-opt status-all">All</div>
+                  <div class="status-opt status-all selected">Active</div>
+                  <div class="status-opt status-all">Inactive</div>
+                </div>
+              </div>
+            </div>
+            <div class="item-list">
+              <div></div>
+            </div>
+          </div>
+          <div class="col2 entry-div">
+            <div class="input-field" style="display: none">
+              <input
+                type="hidden"
+                class="txt-input prod-group-id-input"
+                placeholder="Group ID..."
+                maxlength="50"
+              />
+            </div>
+            <div class="label compulsory-mark">Group Description</div>
+            <div class="input-field">
+              <input
+                type="text"
+                class="txt-input prod-group-desc-input"
+                placeholder="Group Description..."
+                maxlength="255"
+              />
+            </div>
+            <div class="label">Display Sequence</div>
+            <div class="input-field">
+              <input
+                type="text"
+                class="txt-input display-seq-input"
+                placeholder="Display Sequence..."
+                maxlength="10"
+              />
+            </div>
+            <div class="flex-row">
+              <div
+                class="btn-checkbox0 is-active-input"
+                onclick="toggleCheckbox(this)"
+              >
+                <span class="material-icons"></span>
+              </div>
+              <div class="chk-lbl is-active0 celchk1">Active</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="template-div">
+      <div class="group-item0">
+        <div class="items-25 group-desc"></div>
+        <div class="items-25 modified-on"></div>
+        <div class="items-25 modified-by"></div>
+        <div class="items-25 btn-delete">
+          <span class="material-icons"> delete_forever </span>
+        </div>
+      </div>
+    </div>
+    <div id="popup-container">
+      <div id="popup-content">
+        <span id="popup-message"></span>
+        <span id="popup-close-btn" class="material-icons"> close </span>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/settings/set-group.js"></script>
+  </body>
+</html>

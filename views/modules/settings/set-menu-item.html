@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/shortcut-icons/fast-food.png"
+      type="image/x-icon"
+    />
+    <title>Menu Item</title>
+    <link rel="stylesheet" href="/css/share-css.css" />
+    <link rel="stylesheet" href="/css/order-settings.css" />
+    <link rel="stylesheet" href="/css/material-icon.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="prod-list-div">
+        <div class="r1 flex-row space-between">
+          <div class="flex-row r btn-back0">
+            <div class="btn-back">
+              <span class="material-icons"> arrow_back_ios </span>
+            </div>
+            <div class="title">Menu Item</div>
+            <div class="loading"></div>
+          </div>
+
+          <div class="flex-row action">
+            <div class="btn-add btn-bg1">
+              <span class="material-icons"> add_box </span>
+            </div>
+            <div class="btn-save btn-bg2"></div>
+            <div class="btn-delete btn-bg3"></div>
+          </div>
+        </div>
+
+        <div class="flex-row">
+          <div class="c1 flex-row">
+            <div class="c1-1">
+              <div>Item Code</div>
+              <div>
+                <input
+                  type="text"
+                  class="txt-input search-prod-code"
+                  maxlength="50"
+                />
+              </div>
+            </div>
+            <div class="c1-1">
+              <div>Barcode</div>
+              <div>
+                <input
+                  type="text"
+                  class="txt-input search-barcode"
+                  maxlength="50"
+                />
+              </div>
+            </div>
+            <div class="c1-1">
+              <div>Description</div>
+              <div>
+                <input
+                  type="text"
+                  class="txt-input search-prod-desc"
+                  maxlength="50"
+                />
+              </div>
+            </div>
+            <div class="c1-1">
+              <div>Status</div>
+              <div class="flex-row">
+                <div class="c1-2">
+                  <div class="txt-input search-status">
+                    <div class="flex-row card">
+                      <div class="text">Active</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-select btn-select-status"></div>
+                <input type="hidden" class="search-status-id" value="1" />
+              </div>
+            </div>
+            <div class="c1-1">
+              <div>Type</div>
+              <div class="flex-row">
+                <div class="c1-2">
+                  <div class="txt-input search-prod-type">
+                    <div class="flex-row card">
+                      <div class="text">All</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-select btn-select-prod-type"></div>
+                <input type="hidden" class="search-prod-type-id" value="1" />
+              </div>
+            </div>
+            <div class="c1-1">
+              <div>Category</div>
+              <div class="flex-row">
+                <div class="c1-2">
+                  <div class="txt-input search-prod-cat">
+                    <div class="flex-row card">
+                      <div class="text">All</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-select btn-select-prod-cat"></div>
+                <input type="hidden" class="search-prod-cat-id" value="1" />
+              </div>
+            </div>
+            <div class="c1-1">
+              <div>Group</div>
+              <div class="flex-row">
+                <div class="c1-2">
+                  <div class="txt-input search-prod-group">
+                    <div class="flex-row card">
+                      <div class="text">All</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-select btn-select-prod-group"></div>
+                <input type="hidden" class="search-prod-group-id" value="1" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item"></div>
+      </div>
+    </div>
+    <div class="template-div">
+      <div class="menu-item0">
+        <div class="flex-col">
+
+          <div class="flex-row">
+            <div>
+                <span>Product Name: </span>
+                <span class="prod-desc"></span>
+            </div>
+            <div>
+              <span>Type: </span>
+              <span class="type"></span>
+            </div>
+            <div>
+              <span>Category: </span>
+              <span class="category"></span>
+            </div>
+            <div>
+              <span>Group: </span>
+              <span class="group"></span>
+            </div>
+          </div>
+          <div class="flex-row">
+            <div>
+              <span>Price: </span>
+              <span class="price"></span>
+            </div>
+            <div>
+              <span>Last Modified on: </span>
+              <span class="last-modified-on"></span>
+            </div>
+            <div>
+              <span>Last Modified by: </span>
+              <span class="last-modified-by"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/settings/set-menu-item.js"></script>
+  </body>
+</html>

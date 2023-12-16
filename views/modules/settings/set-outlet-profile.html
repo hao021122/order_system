@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/client-order/order/shortcut-icons/shop.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/share-css.css" />
+    <link rel="stylesheet" href="/css/order-settings.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Outlet Profile</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="s-system-div">
+        <div class="r1 flex-row space-between">
+          <div class="flex-row r btn-back0">
+            <div class="btn-back">
+              <span class="material-icons"> arrow_back_ios </span>
+            </div>
+            <div class="title">Outlet Profile</div>
+            <div class="loading"></div>
+          </div>
+
+          <div class="action">
+            <div class="btn-add btn-bg1"></div>
+            <div class="btn-save btn-bg2">
+              <span class="material-icons"> save </span>
+            </div>
+            <div class="btn-delete btn-bg3"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="c entry-div">
+        <div class="label compulsory-mark">Outlet Name</div>
+        <div class="input-field">
+          <input
+            type="text"
+            class="txt-input co-name-input"
+            placeholder="Outlet Name..."
+            maxlength="255"
+          />
+        </div>
+        <div class="label compulsory-mark">Address Line 1</div>
+        <div class="input-field">
+          <input
+            type="text"
+            class="txt-input addr1-input"
+            placeholder="Address Line 1..."
+            maxlength="50"
+          />
+        </div>
+        <div class="label compulsory-mark">Address Line 2</div>
+        <div class="input-field">
+          <input
+            type="text"
+            class="txt-input addr2-input"
+            placeholder="Address Line 2..."
+            maxlength="50"
+          />
+        </div>
+        <div class="label compulsory-mark">Postcode</div>
+        <div class="input-field">
+          <input
+            type="text"
+            class="txt-input postcode-input"
+            placeholder="Postcode..."
+            maxlength="50"
+          />
+        </div>
+        <div class="label">City</div>
+        <div class="input-field">
+          <input
+            type="text"
+            class="txt-input city-input"
+            placeholder="City..."
+            maxlength="50"
+          />
+        </div>
+        <div class="label">State</div>
+        <div class="input-field">
+          <input
+            type="text"
+            class="txt-input state-input"
+            placeholder="State..."
+            maxlength="50"
+          />
+        </div>
+        <div class="label">Country</div>
+        <div class="input-field">
+          <input
+            type="text"
+            class="txt-input country-input"
+            placeholder="Country..."
+            maxlength="50"
+          />
+        </div>
+        <div class="label">Phone</div>
+        <div class="input-field">
+          <input
+            type="text"
+            class="txt-input phone-input"
+            placeholder="Phone..."
+            maxlength="50"
+          />
+        </div>
+        <div class="label">Email</div>
+        <div class="input-field">
+          <input
+            type="text"
+            class="txt-input email-input"
+            placeholder="Email..."
+            maxlength="50"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="popup-container">
+      <div id="popup-content">
+        <span id="popup-message"></span>
+        <span id="popup-close-btn" class="material-icons"> close </span>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/settings/set-outlet-profile.js"></script>
+  </body>
+</html>
