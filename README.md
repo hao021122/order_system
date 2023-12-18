@@ -14,10 +14,14 @@ To install the project, run the following command:
 ```bash
 npm install
 
-## Installation
+```
+
+## How to run
 
 To run this project, run the following command:
 
-```bash
+``` bash
 npm run dev
+
+```
 
