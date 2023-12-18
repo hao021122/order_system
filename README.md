@@ -25,3 +25,5 @@ npm run dev
 
 ```
 
+Go browser enter website URL: http://localhost:3500
+
