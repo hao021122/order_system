@@ -41,7 +41,8 @@ Go browser enter website URL: http://localhost:3500
 This project is using Microsoft SQL (MSSQL), please using the SQL Server 2022 or latest.
 
 1. To execute the SQL query, please open the 'sql' folder and run the 'tables.sql' to insert the tables.
-2. After that, execute the other queries one by one
+2. Run the "default_tables' queries.
+3. After that, execute the other queries one by one
 
 
 
