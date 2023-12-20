@@ -7,6 +7,7 @@ This is a simple order system
 - [Installation](#installation)
 - [How to Run](#how-to-run)
 - [Database](#database)
+- [Setup Project Environment] (#setup-project-environment)
 
 ## Installation
 
@@ -43,6 +44,14 @@ This project is using Microsoft SQL (MSSQL), please using the SQL Server 2022 or
 1. To execute the SQL query, please open the 'sql' folder and run the 'tables.sql' to insert the tables.
 2. Run the "default_tables' queries.
 3. After that, execute the other queries one by one
+
+## Setup Project Environment
+
+1. Go to .env file change the DB_NAME, DB_PWD and DB_USER, The NAME is cookie name, and the SECRET is cookie secret.
+2. Go to config--> my-config.json, can the uid to your email and password to your app password. 
+
+You can refer this link to setup the app password.
+https://support.google.com/mail/answer/185833?hl=en
 
 
 
